@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Employee details using olul
+		</title>
+		<style type="text/css">
+			.Mainconatiner{
+				border: 1px solid;
+				padding-top: 2px;
+				padding-bottom:2px;
+				margin-top:5px;
+				margin-left: 30px;
+				text-align: center;
+				font-weight: bold;
+				font-size: 25px;
+				width:95%;
+				text-decoration:underline;
+				background: #f7ff00;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to right, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			}
+			.innercontan{
+				width:95%;
+				border:1px solid;
+				float: left;
+				margin-left: 30px;
+				margin-top:10px;
+				height: 600px;
+
+			}
+			.footer{
+				width:95%;
+				border: 1px solid;
+				text-align: center;
+				margin-left: 30px;
+				margin-top:10px;
+				float: left;
+				margin-bottom: 20px;
+
+
+			}
+			.leftdetails{
+				    border: 1px solid;
+				    float: left;
+				    height: 562px;
+				    margin-left: 20px;
+				    margin-top: 20px;
+				    width: 243px;
+				    text-align: center;
+				    overflow: scroll;
+				    background: #6a3093;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+			}
+			.rghtdetails{
+				border:1px solid;
+				overflow:scroll;
+				margin-top:20px;
+				margin-right:20px;
+				float: right;
+				width: 927px;
+				height: 561px;
+
+
+			}
+			.empo:hover{
+				padding: 20px;
+				background: powderblue;
+
+			}
+			ul{
+				list-style: None;
+				font-weight: bold;
+				font-size: 20px;	
+			}
+
+			{
+				list-style: None;
+				font-weight: bold;
+				font-size: 20px;	
+			}
+
+			.empclass{
+				    border: 1px solid;
+				    height: 182px;
+				    width: 895px;
+				    margin-top: 10px;
+				    margin-left: 10px;
+			}
+			.lftrhtpic{
+				    border: 1px solid;
+	        	   	float: left;
+				    margin-left: 35px;
+				    margin-top: 24px;		
+
+			}
+			.rhgdetls{
+				    float: right;
+				    height: 147px;
+				    width: 676px;
+				    /* margin-top: -8px; */
+				    margin-right: 8px;
+				    /* padding-left: 2px; */
+				    padding-top: 17px;
+ 			}
+ 			a{
+ 				text-decoration: none;
+ 				color:black;
+
+ 			}
+
+			.ineritems{
+			   list-style: None;
+			   font-weight: bold;
+			   font-size: 17px;
+    		}
+    		body{
+    			background: #4568DC;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    		}
+    		#emp4,#emp2,#emp6,#emp8,#emp10{
+
+    			background: #F7F8F8;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    		}
+    		.empclass:hover{
+    			padding: 2px;
+
+    		}
+
+
+		</style>
+	</head>
+	<body>
+
+		<div class="Mainconatiner">
+			Employee details
+		</div>
+		<div class="innercontan">
+			<div class="leftdetails">
+				<ul >
+					<li class="empo"><a href="#emp1">Employee 1</a></li>
+					<li class="empo"><a href="#emp2">Employee 2</a></li>
+					<li class="empo"><a href="#emp3">Employee 3</a></li>
+					<li class="empo"><a href="#emp4">Employee 4</a></li>
+					<li class="empo"><a href="#emp5">Employee 5</a></li>
+					<li class="empo"><a href="#emp6">Employee 6</a></li>
+					<li class="empo"><a href="#emp7">Employee 7</a></li>
+					<li class="empo"><a href="#emp8">Employee 8</a></li>
+					<li class="empo"><a href="#emp9">Employee 9</a></li>
+					<li class="empo"><a href="#emp10">Employee 10</a></li>
+
+				</ul>
+			</div>
+			<div class="rghtdetails">
+					
+				<div class="empclass" id="emp1">
+					<div class="lftrhtpic">
+						<img src="Images/image1.png" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 1</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+
+				</div>
+					
+				
+
+				<div class="empclass" id="emp2">
+					<div class="lftrhtpic">
+						<img src="Images/image8.png" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 2</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="empclass" id="emp3">
+					<div class="lftrhtpic">
+						<img src="Images/image9.jpg" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 3</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="empclass" id="emp4">
+					<div class="lftrhtpic">
+						<img src="Images/image10.jpg" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 4</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="empclass" id="emp5">
+					<div class="lftrhtpic">
+						<img src="Images/image1.png" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 5</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="empclass" id="emp6">
+					<div class="lftrhtpic">
+						<img src="Images/image8.png" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 6</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="empclass" id="emp7">
+					<div class="lftrhtpic">
+						<img src="Images/image9.jpg" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 7</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="empclass" id="emp8">
+					<div class="lftrhtpic">
+						<img src="Images/image10.jpg" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 8</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="empclass" id="emp9">
+					<div class="lftrhtpic">
+						<img src="Images/image1.png" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 9</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="empclass" id="emp10">
+					<div class="lftrhtpic">
+						<img src="Images/image8.png" height="130px" width="130px" alt="not found">
+					</div>
+					<div class="rhgdetls">
+						<ul class="ineritems">
+							<li><span class="clsphd">Name</span>: <span class="clspdet">Employee 10</span></li>
+							<li><span class="clsphd">Designation</span>: <span class="clspdet">senior programmer</span></li>
+							<li><span class="clsphd">Gender</span>:<span class="clspdet">Male</span></li>
+							<li><span class="clsphd">Age</span>: <span class="clspdet">35 years</span></li>
+							<li><span class="clsphd">Experince</span>: <span class="clspdet">15 years</span></li>
+							<li><span class="clsphd">Address</span>: <span class="clspdet">64, Vikhroli, Nashik - 229687</span></li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<div class="footer">
+			&copy; copyrights by Nagu 2019
+		</div>
+
+
+
+	</body>
+</html>

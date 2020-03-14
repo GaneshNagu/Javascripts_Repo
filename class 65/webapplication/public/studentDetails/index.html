@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating STudent details
+		</title>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="jquery.loadTemplate-1.4.4.min.js"></script>
+		<script type="text/javascript" src='stdData.js'></script>
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body>
+		<video controls autoplay>
+			<source src="http://localhost:8082/videos/small.mp4" type="video/mp4">
+		</video>
+		<div class="loginBlock"> 
+			<h3>
+				LOGIN BLOCK
+			</h3>
+			<ul>
+				<li>
+					Enter User Id:
+					<input type="text" id="uId">
+				</li>
+				<li>
+					Password:
+					<input type="password" id="upwd">
+				</li>
+				<li>
+					<input type="button" value="Login" onclick="valideDetails()">
+				</li>
+				<li>
+					<div class="link" onclick="showSignupBlock()">
+						New User? Signup here..
+					</div>
+				</li>
+				<li class="err">
+					Invalid Credentials...
+				</li>
+			</ul>
+		</div>
+		<div class="signupBlock">
+			<h3>
+				Sign up BLOCK
+			</h3>
+			<ul>
+				<li>Enter user name <input type="text" id="username"></li>
+				<li>Location <input type="text" id="userloc"></li>
+				<li>
+					Account Id <input type="text" id="userId">
+				</li>
+				<li>
+					Accout password <input type="password" id="uPassword">
+				</li>
+				<li>
+					<input type="button" value="SIGNUP" onclick="saveDetaiils()">
+				</li>
+			</ul>
+		</div>
+		<div  class="mainContainer">
+			<div class="tabContainer">
+				<ul>
+					<li onclick="showBlock('tab1')"> All Details</li>
+					<li onclick="showBlock('tab2')"> Search Details</li>
+				</ul>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="tab1Container" >
+				<input type="button" value="Get Data" onclick="getStdData()">
+				<div>
+				<div id="container">
+					
+				</div>
+			</div>
+			</div>
+			<div class="tab2Container" >
+				Enter student Id <input type="text" id="userId"> <input type="button" value="Search User" onclick="searchUserDetails()">
+			</div>
+		</div>
+		
+
+		<script id="stdTmplt">
+			<ul>
+				<li>Student Id: <span data-content="id"></span></li>
+				<li>Student Name: <span data-content="name"></span></li>
+				<li >Student AGE: <span data-content="age"></span></li>
+			</ul>
+		</script>
+	</body>
+</html>

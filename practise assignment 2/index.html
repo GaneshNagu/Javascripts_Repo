@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Demonstrating STudent details
+    </title>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src='stdData.js'></script>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+    <div id="mainhead">
+        Login page
+    </div>
+    <div id="container" class="contclass">
+        <ul id="loginblock">
+            <li><input type="text" name="UserName" id="userid" placeholder="UserName"></li>
+            <li><input type="password" name="Password" id="pid" placeholder="Password"></li>
+            <li><button type="submit" onclick="validatedata()"> login</button></li>
+            <li id="errormessage">Invalid credentials</li>
+        </ul>
+    </div>
+</body>
+
+</html>

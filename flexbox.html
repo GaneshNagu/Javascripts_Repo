@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Flexbox properties</title>
+    
+    <style type="text/css">
+    body{
+        margin:0;
+        padding:0;
+        text-align: center;
+        width:100%;
+        background-color:#eaeaea;
+       }
+       .brdrbx{
+         margin: 0;
+         padding: 0;
+         border: 1px solid #530910;
+         padding:1em;
+         width: 100%;
+       }
+       #container{
+         display: flex;
+         /*flex-direction: column;*/
+       }
+       #box1{
+         flex:3;
+       }
+       #box2{
+        flex:4;
+       }
+       #box3{
+        flex:3;
+       }
+       
+       #container-2{
+        display: flex;
+        justify-content: space-between;
+       }
+       .brdrbx2{
+         margin-top:1em;
+         width:27%;
+         border: 1px solid #3b2a2a;
+         justify-content: space-betwe;
+       }
+
+    </style>
+  </head>
+  <body>
+    <h1>flexbox properties</h1>
+
+    <div id="container">
+        <div id="box1" class="brdrbx">
+            <p>This is the border box1</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur modi nemo doloremque dolor numquam suscipit quo, quas maxime? Minima ipsa nisi culpa atque ducimus recusandae deserunt eius magni fugit facilis.\</p>
+       </div>
+        <div id="box2" class="brdrbx">
+            <p>This is the border box2</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ipsam, possimus voluptatum saepe quasi cum magni vitae aut iste. Illo, voluptatum ea! Vel ut dignissimos perspiciatis, soluta commodi accusamus. Natus!</p>
+        </div>
+        <div id="box3" class="brdrbx">
+            <p>This is the border box3</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas eius cupiditate quos unde, at distinctio architecto iste nulla repudiandae amet, animi ab eveniet est cumque quibusdam, laboriosam qui adipisci.</p>
+        </div>
+        
+    </div>
+
+    <div id="container-2">
+      <div id="box4" class="brdrbx2">
+          <p>This is the border box4</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur modi nemo doloremque dolor numquam suscipit quo, quas maxime? Minima ipsa nisi culpa atque ducimus recusandae deserunt eius magni fugit facilis.\</p>
+     </div>
+      <div id="box5" class="brdrbx2">
+          <p>This is the border box5</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ipsam, possimus voluptatum saepe quasi cum magni vitae aut iste. Illo, voluptatum ea! Vel ut dignissimos perspiciatis, soluta commodi accusamus. Natus!</p>
+      </div>
+      <div id="box6" class="brdrbx2">
+          <p>This is the border box6</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas eius cupiditate quos unde, at distinctio architecto iste nulla repudiandae amet, animi ab eveniet est cumque quibusdam, laboriosam qui adipisci.</p>
+      </div>
+      
+  </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

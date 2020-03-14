@@ -1,0 +1,65 @@
+.tabContainer li {
+	list-style: none;
+	border: 1px solid;
+	text-align: center;
+	background: #ccc;
+	padding: 10px;
+	width: 120px;
+	float: left;
+	cursor: pointer;
+}
+
+.tabContainer li:hover {
+	background: #fff;
+	color: green;
+}
+.tab2Container {
+	display: none;
+}
+
+.tab2Container, .tab1Container {
+	border: 2px solid;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	min-height: 400px;
+}
+.mainContainer {
+	display: none;
+}
+
+.signupBlock li, .loginBlock li{
+	list-style: none;
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+}
+.signupBlock, .loginBlock {
+	border: 2px solid;
+	background: #ccc;
+	width: 300px;
+	margin: 20px auto;
+}
+
+h3 {
+	text-align: center;
+	background: #ccc;
+	color: Green;
+}
+.err {
+	color: red;
+	font-weight: bold;
+	margin: 5px;
+	display: none;
+}
+.link {
+	color: blue;
+	cursor: pointer;
+}
+.link:hover {
+	text-decoration: underline;
+}
+.signupBlock {
+	display: none;
+}

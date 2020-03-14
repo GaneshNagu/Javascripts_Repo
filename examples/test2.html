@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>example 2</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        #container{
+            border:1px ridge black;
+            background:black;
+            color: whitesmoke;
+            height:300px;
+            width:500px;
+            overflow-y:auto;
+            margin: 10px auto;
+            display: none;
+            border-width: 10px;
+            border-color: blueviolet;
+            margin-top:3em;
+        }
+        .box{
+            color: white;
+            padding-left:3em;
+        }
+        #mainblck{
+            width: 200px;
+            margin:5px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+      h1{
+        text-align: center;
+      }
+      body{
+          background: #dfddc7;
+      }
+      #myprogs,#mybar{
+          display: none;
+      }
+      #myprogs{
+          width:80%;
+          margin:2px auto;
+      }
+      #mybar{
+         height: 30px;
+        background-color: #4CAF50;
+        text-align: center; /* To center it horizontally (if you want) */
+        line-height: 30px; /* To center it vertically */
+        color: white; 
+      }
+       
+    </style>
+  </head>
+  <body>
+    <h1>Hacking</h1>
+        <div >
+        <form id="mainblck" class="frmcls">
+            <input type="text" name="username" id="usrname" placeholder="Username" required><Br/>
+            <input type="password" name="password" id="pswd" placeholder="password" required><br/>
+            <input type="button" value="start hacking" onclick="startprocess()">
+        </form>
+        </div>
+        <div id="container" class="bordrcls"></div>
+
+        <div id="myprogs">
+            <div id="mybar"></div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript">
+    var cntr=0;
+    function startprocess(){
+
+        $("#container").show();
+        $('#myprogs').show();   
+        $('#mybar').show();     
+        var usrname=$("#usrname").val();  
+       interval=setInterval(() => {
+                cntr++;
+                myfunction();                        
+                if(cntr>100){
+                    $("#container").hide();
+                    $('#myprogs').hide();   
+                    $('#mybar').hide();  
+                    clearInterval(interval);
+                    alert("Thanks a lot for your cooperation "+usrname +" 😁😁");
+                    location.reload(true);
+                    
+                   }
+                
+            }, 150);
+    }
+    var  incrmen=0;
+    var tempcntr=[];
+    var temptext;
+   var tempwidth=0;
+     function myfunction(){
+        incrmen=incrmen+1;
+         var clsdiv=$("<div></div>").addClass(`box-${incrmen}`);
+         $("#container").append(clsdiv);
+        temptext= `Your system is getting hacked progress ${incrmen} ..........`;
+         $(clsdiv).html(temptext);
+         tempwidth=`${incrmen}%`;
+         console.log(tempwidth);
+         $('#mybar').width(tempwidth);
+         $('#mybar').html(tempwidth);
+
+
+    }
+
+    
+
+
+     </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+		<input type="button" value="GET Data" onclick="loadData()">
+		<div id="details"></div>
+		<script type="text/javascript">
+			
+			var url = "http://localhost:8082/data/student/info";
+
+
+			var loadData = () => {
+				var detailsReq = $.ajax({
+					url: url,
+					method: 'GET',
+					dataType: 'JSON'
+				});
+
+				detailsReq.then(function(res){
+					console.log("successs");
+					console.log(res);
+					showDetails(res.details)
+				}, function(err){
+					console.log("err");
+				});	
+			}
+
+			function showDetails(data) {
+
+				for (var i = 0 ; i < data.length; i++) {
+					var ulTag = $("<ul></ul>");
+					for (var temp in data[i]) {
+						var liTag = $("<li></li>");
+						liTag.html(temp + ' : ' + data[i][temp]);
+						ulTag.append(liTag);
+					}
+					$("#details").append(ulTag);
+				}
+			}
+		</script>
+	</body>
+</html>
